@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+best_model.h5
+model_tuned.keras
+model_updated.keras
+train/
+validate/
+.DS_Store

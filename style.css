@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: hsl(210, 100%, 65%);
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color: hsl(0, 0%, 100%);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.1);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+#image-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#image-input {
+    border: 2px dashed hsl(211, 100%, 50%);
+    border-radius: 8px;
+    padding: 1rem;
+    cursor: pointer;
+    pointer-events: none;
+}
+#image-input::file-selector-button {
+    background-color: hsl(211, 100%, 50%);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    pointer-events: auto;
+}
+#image-input::file-selector-button:hover {
+    background-color: hsl(211, 100%, 35%);
+}
+#upload-button {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.75rem;
+    background-color: hsl(134, 61%, 41%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#upload-button:hover {
+    background-color: hsl(133, 61%, 33%);
+}
+#status{
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    min-height: 1.5rem;
+    color: hsl(0, 0%, 20%);
+}
+#label{
+    font-size: 1.1rem;
+    font-weight: 600;
+    min-height: 1.5rem;
+    color: hsl(0, 0%, 20%);
+}
